@@ -1,6 +1,6 @@
 {
   "name": "meta-utility",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The utility package created by Iamrealbhuvi",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
