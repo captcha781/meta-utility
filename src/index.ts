@@ -1,1 +1,5 @@
-export const Greeter = (name: string) => `Hello ${name}`;
+import { TestFunction } from "./types"
+
+export const testFunction:TestFunction = (text:string) => {
+    return `Hello ${text}`
+}
