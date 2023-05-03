@@ -13,3 +13,11 @@ export interface GeneratePassword {
 export interface ComparePassword {
   (password: string, hashedPassword: string): boolean | Error;
 }
+
+export interface CryptoJSInstance {
+  encryptJs: (encryptValue: string) => string | TypeError;
+  decryptJs: (decryptValue: string) => string | TypeError;
+  replaceSpecialCharacter: (value: string, type: string) => string;
+  encryptString: (encryptValue: string, isSpecialCharacters: boolean) => string | TypeError;
+  decryptString: (decryptValue: string, isSpecialCharacters: boolean) => string | TypeError;
+}
