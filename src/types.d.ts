@@ -21,3 +21,19 @@ export interface CryptoJSInstance {
   encryptString: (encryptValue: string, isSpecialCharacters: boolean) => string | TypeError;
   decryptString: (decryptValue: string, isSpecialCharacters: boolean) => string | TypeError;
 }
+
+export interface PercentageCalculation {
+  (price: number | string, percentage: number | string): number;
+}
+
+export interface CalculateCommissionFee {
+  (actualAmount: number | string, amount: number | string): number;
+}
+
+export interface InterestByDays {
+  (price: number | string, rate: number | string, days: number | string): number;
+}
+
+export interface ServiceFees {
+  (price: number | string, serviceFee: number | string): number;
+}

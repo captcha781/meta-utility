@@ -7,3 +7,4 @@ export const testFunction: TestFunction = (text) => {
 export * from './lib/isEmpty';
 export * from './lib/bcrypt';
 export * from './lib/crypto';
+export * from './lib/math';
